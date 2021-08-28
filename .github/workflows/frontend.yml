@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-20.04
     defaults:
       run:
-        working-directory: ./13app/frontend
+        working-directory: ./13app/frontend/
 
     strategy:
       matrix:
@@ -24,11 +24,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - run: pwd
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v2
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'yarn'
-    - run: pwd
     - run: yarn install
     - run: yarn test
