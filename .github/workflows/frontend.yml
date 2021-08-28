@@ -28,3 +28,6 @@ jobs:
       
     - name: Run the test
       run: yarn test
+      
+    - name: Build the project
+      run: yarn build
