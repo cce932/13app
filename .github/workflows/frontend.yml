@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-20.04
     defaults:
       run:
-        working-directory: 13app/frontend
+        working-directory: ./13app/frontend
 
     strategy:
       matrix:
