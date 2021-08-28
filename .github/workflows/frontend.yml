@@ -29,6 +29,6 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: ${{ matrix.node-version }}
-        cache: '13app/frontend'
+        cache: './13app/frontend'
     - run: yarn install
     - run: yarn test
