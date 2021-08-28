@@ -29,7 +29,7 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: ${{ matrix.node-version }}
-        cache: 'yarn'
-        cache-dependency-path: '13app/frontend/yarn.lock'
-    - run: yarn install
-    - run: yarn test
+        cache: 'npm'
+#         cache-dependency-path: '13app/frontend/yarn.lock'
+    - run: npm i
+#     - run: npm test
